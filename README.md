@@ -155,3 +155,34 @@ Java is a high-level, object-oriented programming language developed by Sun Micr
 ---
 
 Java’s cross-platform nature, robust ecosystem, and high security make it an ideal choice for enterprise and Android development. Its extensive use in big data, IoT, and server-side applications, coupled with a strong community, makes it a valuable language for developers across various industries. However, memory usage, verbosity, and GUI limitations should be considered based on the application requirements.
+---
+
+In Java, an `int` (integer) is a **32-bit signed integer**. The range of values for an `int` is determined by the number of bits (32) and the use of one bit for the **sign** (positive or negative).
+
+### Formula for Integer Range
+
+The range of an `n`-bit signed integer is:
+\[
+-\left(2^{(n-1)}\right) \text{ to } 2^{(n-1)} - 1
+\]
+
+For `int` in Java:
+- `n = 32` (since it's a 32-bit integer),
+- Thus, the range is:
+  \[
+  -2^{31} \text{ to } 2^{31} - 1
+  \]
+
+### Calculating the Range for 32-bit Integers
+
+1. **Minimum Value**:
+   \[
+   -2^{31} = -2147483648
+   \]
+
+2. **Maximum Value**:
+   \[
+   2^{31} - 1 = 2147483647
+   \]
+
+So, the range of a 32-bit signed integer (`int`) in Java is from **-2147483648** to **2147483647**. This range ensures that the integer type can represent both positive and negative numbers, with one bit dedicated to indicating the sign.
