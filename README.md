@@ -2,6 +2,9 @@
 
 Java is a high-level, object-oriented programming language developed by Sun Microsystems (now managed by Oracle) in the mid-1990s. Java’s primary design philosophy is **WORA** (Write Once, Run Anywhere), meaning code written in Java can run on any device with the **JVM** (Java Virtual Machine), which interprets Java’s platform-independent **bytecode**. This cross-platform capability, combined with robust security and object-oriented principles, has made Java one of the most widely-used programming languages globally.
 
+
+**Developed by Sun Microsystems in 1995, Java is a highly popular, object-oriented programming language. This platform independent programming language is utilized for Android development, web development, artificial intelligence, cloud applications, and much more.**
+
 ---
 
 ![image](https://github.com/user-attachments/assets/f38c3cc4-2d31-4adc-a2fc-565a3e69da84)
