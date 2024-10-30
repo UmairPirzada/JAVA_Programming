@@ -4,7 +4,7 @@ Java is a high-level, object-oriented programming language developed by Sun Micr
 
 ---
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scaler.com%2Ftopics%2Fjava%2Fhow-java-program-works%2F&psig=AOvVaw3ZZrD1sot-M34BtGdv6SYO&ust=1730349235300000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCihq6jtYkDFQAAAAAdAAAAABAE
+![Uploading image.png…]()
 
 --- 
 
