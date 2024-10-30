@@ -1,28 +1,51 @@
 # Java Data Types and Their Ranges
 
-Java provides several primitive data types to store different types of values. Below is a breakdown of each type, its size, range (for numeric types), and usage.
+In Java, a **data type** is an attribute that specifies the type of data that a variable can store. Data types are divided into two main categories: **Primitive** and **Non-Primitive**.
 
-## Data Types Overview
+## Types of Data Types
 
-| Data Type | Size      | Description                                                                                                  |
-|-----------|-----------|--------------------------------------------------------------------------------------------------------------|
-| `byte`    | 1 byte    | Stores whole numbers from **-128** to **127**                                                                |
-| `short`   | 2 bytes   | Stores whole numbers from **-32,768** to **32,767**                                                          |
-| `int`     | 4 bytes   | Stores whole numbers from **-2,147,483,648** to **2,147,483,647**                                            |
-| `long`    | 8 bytes   | Stores whole numbers from **-9,223,372,036,854,775,808** to **9,223,372,036,854,775,807**                    |
-| `float`   | 4 bytes   | Stores fractional numbers, sufficient for storing **6 to 7 decimal digits**                                  |
-| `double`  | 8 bytes   | Stores fractional numbers, sufficient for storing **15 to 16 decimal digits**                                |
-| `boolean` | 1 bit     | Stores **true** or **false** values                                                                          |
-| `char`    | 2 bytes   | Stores a **single character** or **ASCII value**                                                             |
+### 1. Primitive Data Types
+Primitive data types in Java are the most basic types of data. They are predefined by the language and named by a keyword. Primitive data types directly contain values, which makes them more memory-efficient. Java has eight primitive data types:
+
+| **Data Type**  | **Size**     | **Description**                                         |
+|----------------|--------------|---------------------------------------------------------|
+| `byte`         | 1 byte       | Stores whole numbers from **-128** to **127**           |
+| `short`        | 2 bytes      | Stores whole numbers from **-32,768** to **32,767**     |
+| `int`          | 4 bytes      | Stores whole numbers from **-2,147,483,648** to **2,147,483,647** |
+| `long`         | 8 bytes      | Stores whole numbers from **-9,223,372,036,854,775,808** to **9,223,372,036,854,775,807** |
+| `float`        | 4 bytes      | Stores fractional numbers, with precision up to **7 decimal digits** |
+| `double`       | 8 bytes      | Stores fractional numbers, with precision up to **16 decimal digits** |
+| `boolean`      | 1 bit        | Stores **true** or **false**                            |
+| `char`         | 2 bytes      | Stores a **single character** or **ASCII value**        |
+
+### 2. Non-Primitive Data Types
+Non-primitive data types in Java are more complex structures. Unlike primitive types, they are created by the user, so they do not directly store values but instead reference locations in memory where data is stored. Non-primitive types include:
+
+| **Data Type**  | **Description**                                                                                  |
+|----------------|--------------------------------------------------------------------------------------------------|
+| `String`       | Stores a sequence of characters, typically representing text                                     |
+| `Array`        | Stores a collection of elements of the same data type                                            |
+| `Class`        | Blueprint for creating objects, containing attributes and methods                                |
+| `Interface`    | Specifies methods that a class must implement, defining a contract without any method bodies     |
+
+## Differences Between Primitive and Non-Primitive Data Types
+
+| Feature                    | Primitive Data Types                            | Non-Primitive Data Types                                |
+|----------------------------|------------------------------------------------|--------------------------------------------------------|
+| **Definition**             | Basic types built into the language            | Created by users and can be more complex               |
+| **Memory Usage**           | Directly store values                          | Store references to memory locations                   |
+| **Size**                   | Fixed size                                     | Size can vary depending on the data type               |
+| **Null Assignment**        | Cannot be assigned `null`                      | Can be assigned `null`                                 |
+| **Methods**                | Cannot invoke methods                          | Can invoke methods defined within the class/interface  |
+| **Examples**               | `int`, `char`, `boolean`, `float`              | `String`, `Array`, `Class`, `Interface`                |
 
 ## Detailed Calculations for Integer Ranges
 
 For signed integer data types in Java (`byte`, `short`, `int`, and `long`), the range is determined based on the number of bits used to represent each type. The formula for calculating the range of an `n`-bit signed integer is:
 
-
 -(2^{(n-1)}) 
 To
-(2^{(n-1)} - 1)
+ (2^{(n-1)} - 1)
 
 
 Where `n` is the number of bits used by the type.
@@ -68,33 +91,5 @@ Floating-point numbers are stored in a format specified by IEEE 754, and their r
 
 - **`boolean`**: 1 bit - Stores `true` or `false` values.
 - **`char`**: 2 bytes (16 bits) - Stores a **single character** or **ASCII value**. Java uses Unicode for `char`, so it can store characters from `'\u0000'` (0) to `'\uffff'` (65,535).
-
----
-
-## Primitive and Non-Primitive Data Types in Java
-
-Java provides **primitive** data types that store simple values and **non-primitive** data types for complex structures. Here’s a summary of each category:
-
-### Primitive Data Types
-
-| **Data Type**  | **Size**     | **Description**                                         |
-|----------------|--------------|---------------------------------------------------------|
-| `byte`         | 1 byte       | Stores whole numbers from **-128** to **127**           |
-| `short`        | 2 bytes      | Stores whole numbers from **-32,768** to **32,767**     |
-| `int`          | 4 bytes      | Stores whole numbers from **-2,147,483,648** to **2,147,483,647** |
-| `long`         | 8 bytes      | Stores whole numbers from **-9,223,372,036,854,775,808** to **9,223,372,036,854,775,807** |
-| `float`        | 4 bytes      | Stores fractional numbers, with precision up to **7 decimal digits** |
-| `double`       | 8 bytes      | Stores fractional numbers, with precision up to **16 decimal digits** |
-| `boolean`      | 1 bit        | Stores **true** or **false**                            |
-| `char`         | 2 bytes      | Stores a **single character** or **ASCII value**        |
-
-### Non-Primitive Data Types
-
-| **Data Type**  | **Description**                                                                                  |
-|----------------|--------------------------------------------------------------------------------------------------|
-| `String`       | Stores a sequence of characters, typically representing text                                     |
-| `Array`        | Stores a collection of elements of the same data type                                            |
-| `Class`        | Blueprint for creating objects, containing attributes and methods                                |
-| `Interface`    | Specifies methods that a class must implement, defining a contract without any method bodies     |
 
 ---
