@@ -19,9 +19,11 @@ Java provides several primitive data types to store different types of values. B
 
 For signed integer data types in Java (`byte`, `short`, `int`, and `long`), the range is determined based on the number of bits used to represent each type. The formula for calculating the range of an `n`-bit signed integer is:
 
-\[
--(2^{(n-1)}) \text{ to } (2^{(n-1)} - 1)
-\]
+
+-(2^{(n-1)}) 
+To
+(2^{(n-1)} - 1)
+
 
 Where `n` is the number of bits used by the type.
 
