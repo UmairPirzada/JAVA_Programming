@@ -4,6 +4,10 @@ Java is a high-level, object-oriented programming language developed by Sun Micr
 
 ---
 
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fjava-architecture-how-works-omar-ismail&psig=AOvVaw0toD4so_qdVZKjqY5vSw_V&ust=1730348860860000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDP5_yhtYkDFQAAAAAdAAAAABA3
+
+--- 
+
 ### Key Characteristics of Java
 
 1. **Platform Independence**
