@@ -19,7 +19,9 @@ Java provides several primitive data types to store different types of values. B
 
 For signed integer data types in Java (`byte`, `short`, `int`, and `long`), the range is determined based on the number of bits used to represent each type. The formula for calculating the range of an `n`-bit signed integer is:
 
--(2^(n-1)) to (2^(n-1)) - 1
+\[
+-(2^{(n-1)}) \text{ to } (2^{(n-1)} - 1)
+\]
 
 Where `n` is the number of bits used by the type.
 
@@ -67,6 +69,30 @@ Floating-point numbers are stored in a format specified by IEEE 754, and their r
 
 ---
 
-This summary provides the data types in Java, their memory sizes, ranges (where applicable), and a brief explanation of each type’s usage.
+## Primitive and Non-Primitive Data Types in Java
 
+Java provides **primitive** data types that store simple values and **non-primitive** data types for complex structures. Here’s a summary of each category:
 
+### Primitive Data Types
+
+| **Data Type**  | **Size**     | **Description**                                         |
+|----------------|--------------|---------------------------------------------------------|
+| `byte`         | 1 byte       | Stores whole numbers from **-128** to **127**           |
+| `short`        | 2 bytes      | Stores whole numbers from **-32,768** to **32,767**     |
+| `int`          | 4 bytes      | Stores whole numbers from **-2,147,483,648** to **2,147,483,647** |
+| `long`         | 8 bytes      | Stores whole numbers from **-9,223,372,036,854,775,808** to **9,223,372,036,854,775,807** |
+| `float`        | 4 bytes      | Stores fractional numbers, with precision up to **7 decimal digits** |
+| `double`       | 8 bytes      | Stores fractional numbers, with precision up to **16 decimal digits** |
+| `boolean`      | 1 bit        | Stores **true** or **false**                            |
+| `char`         | 2 bytes      | Stores a **single character** or **ASCII value**        |
+
+### Non-Primitive Data Types
+
+| **Data Type**  | **Description**                                                                                  |
+|----------------|--------------------------------------------------------------------------------------------------|
+| `String`       | Stores a sequence of characters, typically representing text                                     |
+| `Array`        | Stores a collection of elements of the same data type                                            |
+| `Class`        | Blueprint for creating objects, containing attributes and methods                                |
+| `Interface`    | Specifies methods that a class must implement, defining a contract without any method bodies     |
+
+---
