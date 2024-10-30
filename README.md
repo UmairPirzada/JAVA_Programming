@@ -35,7 +35,8 @@ Java is a high-level, object-oriented programming language developed by Sun Micr
    - Java’s ecosystem includes extensive libraries, frameworks, and tools, allowing developers to build a wide range of applications.
    - **Real-world Example**: The **Spring Framework** simplifies enterprise application development, while the **Android SDK** (Software Development Kit) enables Android mobile development.
   
-   ![Uploading image.png…]()
+   ![image](https://github.com/user-attachments/assets/24031afb-84dc-44f9-b178-cea009860c4c)
+
 
 
 ---
