@@ -62,9 +62,11 @@ public class Main {
 }
 
 
-### When this code is run, the computer processes it and outputs:
 
-**The sum is: 15**
+// When this code is run, the computer processes it and outputs:
+
+// **The sum is: 15**
+```
 
 
 ## 4. Why is Computer Programming Important?
