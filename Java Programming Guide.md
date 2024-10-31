@@ -198,11 +198,14 @@ A simple Car class is defined, which includes an instance variable and a constru
 A method named calculateSum is created to demonstrate how to define and call methods in Java. It takes two integers as parameters and returns their sum.
 
 ###How to Compile and Run
-**1. Save the Code:** Save the code in a file named JavaBasics.java.
+**1. Save the Code:**
+Save the code in a file named JavaBasics.java.
 
-**2. Open Terminal or Command Prompt:** Open your terminal or command prompt.
+**2. Open Terminal or Command Prompt:** 
+Open your terminal or command prompt.
 
-**3. Navigate to the Directory:** Navigate to the directory where the file is saved using the cd command.
+**3. Navigate to the Directory:** 
+Navigate to the directory where the file is saved using the cd command.
 
 **4. Compile the Java Program:**
 ```bash
