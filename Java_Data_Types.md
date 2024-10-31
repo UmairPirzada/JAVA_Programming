@@ -23,7 +23,8 @@ Primitive data types in Java are the most basic types of data. They are predefin
 | `char`         | 2 bytes      | Stores a **single character** or **ASCII value**        |
 
 ### 2. Non-Primitive Data Types
-Non-primitive data types in Java are more complex structures. Unlike primitive types, they are created by the user, so they do not directly store values but instead reference locations in memory where data is stored. Non-primitive types include:
+Non-primitive data types in Java are more complex structures. Unlike primitive types, they are created by the user, so they do not directly store values but instead reference locations in memory where data is stored. Non-primitive data types are called reference types because they refer to objects.
+Non-primitive types include:
 
 | **Data Type**  | **Description**                                                                                  |
 |----------------|--------------------------------------------------------------------------------------------------|
@@ -33,6 +34,17 @@ Non-primitive data types in Java are more complex structures. Unlike primitive t
 | `Interface`    | Specifies methods that a class must implement, defining a contract without any method bodies     |
 
 ## Differences Between Primitive and Non-Primitive Data Types
+
+**The main difference between primitive and non-primitive data types are:**
+
+- Primitive types in Java are predefined and built into the language, while non-primitive types are created by the programmer (except for String).
+- 
+- Non-primitive types can be used to call methods to perform certain operations, wheras primitive types cannot.
+- 
+- Primitive types start with a lowercase letter (like int), while non-primitive types typically starts with an uppercase letter (like String).
+- 
+- Primitive types always hold a value, wheras non-primitive types can be null.
+  
 
 | Feature                    | Primitive Data Types                            | Non-Primitive Data Types                                |
 |----------------------------|------------------------------------------------|--------------------------------------------------------|
