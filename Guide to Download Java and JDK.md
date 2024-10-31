@@ -102,7 +102,9 @@ After installing the JDK, you can verify that it was installed correctly by chec
    java -version
     ```
   3. You should see output similar to this
-    ``` java version "11.0.x" 202x-xx-xx
+
+```
+java version "11.0.x" 202x-xx-xx
 Java(TM) SE Runtime Environment (build 11.0.x+xx)
 Java HotSpot(TM) 64-Bit Server VM (build 11.0.x+xx, mixed mode)
 ```
