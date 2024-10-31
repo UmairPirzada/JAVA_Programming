@@ -60,3 +60,43 @@ public class Main {
         System.out.println("The sum is: " + sum);
     }
 }
+
+
+### When this code is run, the computer processes it and outputs:
+
+**The sum is: 15**
+
+
+## 4. Why is Computer Programming Important?
+
+Programming is crucial as it enables us to:
+
+- **Solve Problems Efficiently**: Computers can handle repetitive and large-scale tasks much faster than humans.
+- **Automate Tasks**: Programming can automate processes like data entry, calculations, and transactions.
+- **Drive Innovation**: Fields like artificial intelligence (AI), robotics, and space exploration are powered by programming.
+- **Create Applications**: From software and websites to mobile apps, programming powers all modern technology.
+
+---
+
+## 5. Why You Should Learn Programming
+
+Learning programming can greatly benefit both your personal and professional life. Here’s why:
+
+- **High Demand**: Programming skills are in high demand across industries, from technology and finance to healthcare and education.
+- **Problem-Solving**: Programming builds logical thinking and problem-solving abilities.
+- **Creativity and Innovation**: You can create anything from apps to games and interactive websites.
+- **Job Flexibility**: Programmers can work remotely, freelance, or in companies, offering diverse career paths.
+- **Empowerment**: With programming, you have control over digital tools and can automate daily tasks or projects.
+
+---
+
+## Examples of How Programming Impacts Everyday Life
+
+Programming impacts nearly every area of modern life. Here are some examples:
+
+- **Mobile Apps and Social Media**: Built with languages like Java and Swift, apps like Facebook, Instagram, and TikTok rely on programming to create interactive and engaging experiences.
+- **E-Commerce**: Websites like Amazon use programming to manage product inventories, process orders, and provide personalized recommendations.
+- **Healthcare**: Programming is used in medical devices, patient management systems, diagnostic tools, and research data analysis to improve healthcare outcomes.
+- **Gaming and Entertainment**: Streaming platforms like Netflix and games like Fortnite rely on programming for content delivery, real-time gameplay, and personalized experiences.
+
+
