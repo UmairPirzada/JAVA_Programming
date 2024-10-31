@@ -5,7 +5,11 @@ In Java, a **data type** is an attribute that specifies the type of data that a 
 ## Types of Data Types
 
 ### 1. Primitive Data Types
-Primitive data types in Java are the most basic types of data. They are predefined by the language and named by a keyword. Primitive data types directly contain values, which makes them more memory-efficient. Java has eight primitive data types:
+Primitive data types in Java are the most basic types of data. They are predefined by the language and named by a keyword. Primitive data types directly contain values, which makes them more memory-efficient. A primitive data type specifies the size and type of variable values, and it has no additional methods.
+
+**There are eight primitive data types in Java:**
+
+
 
 | **Data Type**  | **Size**     | **Description**                                         |
 |----------------|--------------|---------------------------------------------------------|
