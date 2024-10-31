@@ -96,9 +96,13 @@ Learning programming can greatly benefit both your personal and professional lif
 
 Programming impacts nearly every area of modern life. Here are some examples:
 
-- **Mobile Apps and Social Media**: Built with languages like Java and Swift, apps like Facebook, Instagram, and TikTok rely on programming to create interactive and engaging experiences.
-- **E-Commerce**: Websites like Amazon use programming to manage product inventories, process orders, and provide personalized recommendations.
-- **Healthcare**: Programming is used in medical devices, patient management systems, diagnostic tools, and research data analysis to improve healthcare outcomes.
-- **Gaming and Entertainment**: Streaming platforms like Netflix and games like Fortnite rely on programming for content delivery, real-time gameplay, and personalized experiences.
+- **Mobile Apps and Social Media**:
+- Built with languages like Java and Swift, apps like Facebook, Instagram, and TikTok rely on programming to create interactive and engaging experiences.
+- **E-Commerce**:
+- Websites like Amazon use programming to manage product inventories, process orders, and provide personalized recommendations.
+- **Healthcare**:
+-  Programming is used in medical devices, patient management systems, diagnostic tools, and research data analysis to improve healthcare outcomes.
+- **Gaming and Entertainment**:
+-  Streaming platforms like Netflix and games like Fortnite rely on programming for content delivery, real-time gameplay, and personalized experiences.
 
 
