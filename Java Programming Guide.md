@@ -56,6 +56,52 @@ public class MyFirstProgram {
 4. **Constants**: Use uppercase letters with underscores.
    - **Example**: `MAX_VALUE`, `PI_VALUE`
   
+# Understanding the Main Method in Java
+
+## `public static void main(String[] args)`
+
+The line `public static void main(String[] args)` is a crucial part of Java programming. Here’s a breakdown of what each component means and why it's used:
+
+### Breakdown of `public static void main(String[] args)`
+
+1. **public**: 
+   - This is an access modifier. It means that the `main` method can be accessed from anywhere, which is necessary for the Java Virtual Machine (JVM) to invoke it when starting your application.
+
+2. **static**: 
+   - This keyword means that the method belongs to the class, rather than to instances of the class (objects). Since the `main` method is called by the JVM without creating an instance of the class, it must be static.
+
+3. **void**: 
+   - This specifies the return type of the method. `void` means that the `main` method does not return any value.
+
+4. **main**: 
+   - This is the name of the method. The JVM looks specifically for this method name when executing a Java program. It’s the entry point of any standalone Java application.
+
+5. **String[] args**: 
+   - This parameter is an array of `String` objects. It allows the program to accept command-line arguments. If the program is run with arguments, those arguments can be accessed within the program through this `args` array.
+
+### Why We Use This Code
+
+- **Entry Point**: The `main` method serves as the entry point for any standalone Java application. When you run a Java program, the JVM starts execution from this method.
+  
+- **Program Execution**: Any code written inside the `main` method will be executed when the program is run, allowing you to define the behavior of the application.
+
+- **Handling Arguments**: By using `String[] args`, you can pass information to your program at runtime, which can be useful for configuring behavior or providing input without changing the code.
+
+### Example
+
+Here's a simple example of a Java program that uses the `main` method:
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+// When this program is executed, the output will be:
+
+// Hello, World!
+```
+  
 ## Primitive and Non-Primitive Data Types
 
 ### Primitive Data Types
