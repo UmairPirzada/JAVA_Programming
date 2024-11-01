@@ -1,6 +1,32 @@
-# Introduction to DBMS (Database Management System)
+# 2. Manual File System
 
-**Last Updated**: 02 Sep, 2024
+A **manual file system** is a way of organizing and storing information physically, such as in cabinets, folders, or books. This system relies on people to store, retrieve, and manage data without the aid of computer software.
+
+### Drawbacks of Manual File System
+- **Time-consuming**: Locating and retrieving physical records is slow and requires manual effort.
+- **Error-prone**: Increased chances of data entry errors and inconsistencies due to manual handling.
+- **Limited accessibility**: Only one person can access a physical file at a time, reducing collaboration and efficiency.
+- **Space requirements**: Physical files take up space in offices or storage rooms.
+- **Security concerns**: Physical data can be easily accessed or removed, making security difficult.
+- **Data loss risk**: Physical documents are susceptible to damage or loss from fire, water, or other mishaps.
+
+---
+
+## 2. File-Based System (Computerized)
+
+A **file-based system** is a digital method of storing data in files that can be managed by an operating system or basic software. Data is usually organized in text, spreadsheets, or binary files, accessed sequentially or directly through indexing.
+
+### Drawbacks of File-Based System
+- **Data redundancy and inconsistency**: Duplication of data across multiple files can lead to inconsistency.
+- **Complex data retrieval**: Accessing data across separate files can be challenging.
+- **Lack of data integrity**: No centralized checks exist to ensure data accuracy across files.
+- **Limited security**: Security controls in file-based systems are weak, risking unauthorized access.
+- **Concurrency issues**: Limited support for multiple users accessing or modifying data simultaneously.
+- **Lack of data independence**: Changes in data structure often require modification of application code.
+
+---
+
+# 3. Introduction to DBMS (Database Management System)
 
 ## Table of Contents
 - [What is DBMS?](#what-is-dbms)
