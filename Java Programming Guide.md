@@ -38,7 +38,7 @@ public class MyFirstProgram {
 ### Class Declaration: 
 - public class MyFirstProgram
 ### Main Method: 
--public static void main(String[] args)
+- public static void main(String[] args)
 ### Print Statement:
 - System.out.println("Hello, World!");
 
