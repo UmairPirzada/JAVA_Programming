@@ -1,4 +1,4 @@
-# 2. Manual File System
+# 1. Manual File System
 
 A **manual file system** is a way of organizing and storing information physically, such as in cabinets, folders, or books. This system relies on people to store, retrieve, and manage data without the aid of computer software.
 
