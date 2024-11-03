@@ -36,6 +36,9 @@ Non-primitive types include:
 
 ## Differences Between Primitive and Non-Primitive Data Types
 
+![image](https://github.com/user-attachments/assets/da6486ef-ddbf-4f54-a9a6-c840607a7277)
+
+
 **The main difference between primitive and non-primitive data types are:**
 
 - Primitive types in Java are predefined and built into the language, while non-primitive types are created by the programmer (except for String).
