@@ -9,6 +9,7 @@ Primitive data types in Java are the most basic types of data. They are predefin
 
 **There are eight primitive data types in Java:**
 
+![image](https://github.com/user-attachments/assets/edb7a328-f231-41bd-94c9-124b285eb8d2)
 
 
 | **Data Type**  | **Size**     | **Description**                                         |
