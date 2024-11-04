@@ -101,7 +101,164 @@ public class HelloWorld {
 
 // Hello, World!
 ```
-  
+# Java Programming Concepts with Code Examples
+
+This repository provides examples and explanations of core Java programming concepts, including import statements, string handling, variables, reference types, and arrays. Each concept is demonstrated with code snippets and explanations, suitable for both beginners and those looking to brush up on Java fundamentals.
+
+---
+
+## Table of Contents
+
+1. [Import Statements](#import-statements)
+2. [String Literals and Escape Sequences](#string-literals-and-escape-sequences)
+3. [Variables and Primitive Data Types](#variables-and-primitive-data-types)
+4. [Reference Types and Object Manipulation](#reference-types-and-object-manipulation)
+5. [Arrays - Single and Multi-dimensional](#arrays---single-and-multi-dimensional)
+
+---
+
+# 1. Import Statements
+
+```java
+import java.awt.*;       // Imports all classes in the java.awt package
+import java.util.Date;    // Imports the Date class from the java.util package
+import java.util.Arrays;  // Imports the Arrays class for array operations
+```
+### Explanation
+** In Java, import statements allow you to access predefined classes from various packages. Here we are importing:**
+
+- java.awt.*: Includes classes for GUI components and layouts.
+
+- java.util.Date: Provides classes to work with dates and times.
+
+- java.util.Arrays: Offers utility methods for array manipulation, such as sorting and converting arrays to strings.
+
+# 2. String Literals and Escape Sequences
+
+```jave
+public class Main {
+    public static void main(String[] args) {
+        String message1 = "Hello World";            // Basic string literal
+        String message2 = "Hello \"World!\"";       // Escape double quotes
+        String message3 = "c:\\Windows\\...";       // Escape backslashes
+        String message4 = "Hello\nWorld!";          // New line
+        String message5 = "Hello\tWorld!";          // Tab space
+
+        // Displaying Strings
+        System.out.println(message1);
+        System.out.println(message2);
+        System.out.println(message3);
+        System.out.println(message4);
+        System.out.println(message5);
+    }
+}
+```
+### Explanation
+**This section demonstrates the use of string literals and escape sequences in Java:**
+
+- \" allows inclusion of double quotes within a string.
+- \\ allows for a single backslash, often used in file paths.
+- \n represents a new line.
+- \t represents a tab space.
+
+# 3. Variables and Primitive Data Types
+```jave
+public class Main {
+    public static void main(String[] args) {
+        int age = 30;                 // Integer variable
+        byte ageByte = 30;            // Byte variable
+        int viewsCount = 123_456_789; // Using underscores for readability
+        long viewsCountLong = 4_123_456_789L; // Long variable
+        float price = 10.99F;         // Float variable
+        char letter = 'A';            // Character
+        boolean isEligible = false;   // Boolean value
+
+        // Displaying Variables
+        System.out.println("Age: " + age);
+        System.out.println("Views Count: " + viewsCount);
+        System.out.println("Price: " + price);
+        System.out.println("Letter: " + letter);
+        System.out.println("Is Eligible: " + isEligible);
+    }
+}
+```
+### Explanation
+**Java supports various primitive data types:**
+
+- int, byte, long for different integer values.
+- float for floating-point numbers.
+- char for single characters.
+- boolean for true/false values. Underscores (_) improve readability in large numbers.
+
+# 4. Reference Types and Object Manipulation
+```java
+  import java.awt.Point;
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        // Working with a Date object
+        Date now = new Date();
+        System.out.println("Current Date and Time: " + now);
+
+        // Copy by Value (Primitive Type)
+        byte x = 1;
+        byte y = x; // Copy by value
+        x = 2;
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+
+        // Copy by Reference (Reference Type)
+        Point point1 = new Point(1, 1);
+        Point point2 = point1; // Copy by reference
+        point1.x = 2;
+        System.out.println("Point 1 x value: " + point1.x);
+        System.out.println("Point 2 x value: " + point2.x); // Reflects change in point1
+    }
+}
+```
+
+### Explanation
+**Java distinguishes between primitive types (copied by value) and reference types (copied by reference):**
+
+- Primitive types store actual values. For example, changing x doesn't affect y.
+- Reference types store references to objects. Modifying the object through point1 reflects in point2 as they point to the same object.
+
+
+# 5. Arrays - Single and Multi-dimensional
+```java
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        // Single-Dimensional Array Declaration and Initialization
+        int[] numbers = new int[5]; // Array of 5 elements
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        numbers[3] = 4;
+        numbers[4] = 5;
+        System.out.println("Array: " + Arrays.toString(numbers));
+
+        // Shorter Array Initialization
+        int[] numbers2 = {2, 4, 6, 7, 8, 5, 12};
+        System.out.println("Array Length: " + numbers2.length);
+        Arrays.sort(numbers2); // Sort array
+        System.out.println("Sorted Array: " + Arrays.toString(numbers2));
+
+        // Multi-Dimensional Array
+        int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+        System.out.println("2D Array: " + Arrays.deepToString(matrix));
+    }
+}
+```
+### Explanation
+**Arrays in Java:**
+
+- Single-dimensional arrays store a list of elements of the same type.
+- Multi-dimensional arrays (like 2D arrays) represent grids or tables.
+- Arrays.toString() and Arrays.deepToString() help in printing single and multi-dimensional arrays, respectively.
+
 ## Primitive and Non-Primitive Data Types
 
 ### Primitive Data Types
