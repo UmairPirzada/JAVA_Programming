@@ -120,6 +120,54 @@ public class FibonacciSeries {
 ### Explanation: 
 - This program calculates Fibonacci numbers by adding the previous two numbers in each loop iteration.
 
+# Temperature Conversion (Celsius to Fahrenheit and Fahrenheit to Celsius)
+
+This program converts temperatures between Celsius and Fahrenheit using the following formulas.
+
+## Conversion Formulas
+
+### Celsius to Fahrenheit
+To convert a temperature from Celsius to Fahrenheit:
+\[
+°F = (°C \times \frac{9}{5}) + 32
+\]
+
+### Fahrenheit to Celsius
+To convert a temperature from Fahrenheit to Celsius:
+\[
+°C = (°F - 32) \times \frac{5}{9}
+\]
+
+## Example Java Code
+
+The following Java program uses command-line arguments to convert a given temperature between Celsius and Fahrenheit.
+
+```java
+public class TemperatureConversion {
+    public static void main(String[] args) {
+        if (args.length < 2) {
+            System.out.println("Usage: java TemperatureConversion <temperature> <C/F>");
+            return;
+        }
+
+        double temperature = Double.parseDouble(args[0]);
+        String scale = args[1].toUpperCase();
+
+        if (scale.equals("C")) {
+            // Celsius to Fahrenheit conversion
+            double fahrenheit = (temperature * 9 / 5) + 32;
+            System.out.printf("%.2f°C is %.2f°F\n", temperature, fahrenheit);
+        } else if (scale.equals("F")) {
+            // Fahrenheit to Celsius conversion
+            double celsius = (temperature - 32) * 5 / 9;
+            System.out.printf("%.2f°F is %.2f°C\n", temperature, celsius);
+        } else {
+            System.out.println("Invalid scale. Use 'C' for Celsius or 'F' for Fahrenheit.");
+        }
+    }
+}
+```
+
 ## Task 3:
 - Temperature Conversion (Celsius to Fahrenheit and vice versa)
 - Functionality: Convert temperatures between Celsius and Fahrenheit using command-line arguments.
