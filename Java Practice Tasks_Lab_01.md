@@ -46,10 +46,60 @@ public class EvenNumbers {
 ### Explanation: 
 **The program uses a for loop that iterates from 2 to 20, printing each even number.**
 
+# Fibonacci Formula
+- The **Fibonacci Series** is a sequence where each number is the sum of the two preceding ones, starting from 0 and 1. This sequence is widely used in mathematics, computer science, and even appears in natural patterns.
+
+## Definition
+
+The Fibonacci sequence starts as follows:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+### Fibonacci Formula
+The formula to calculate the \( n \)-th term in the Fibonacci series is:
+\[
+F(n) = F(n-1) + F(n-2)
+\]
+where:
+- \( F(0) = 0 \)
+- \( F(1) = 1 \)
+
+### Explanation
+Each term is the sum of the previous two terms:
+- \( F(2) = F(1) + F(0) = 1 \)
+- \( F(3) = F(2) + F(1) = 2 \)
+- \( F(4) = F(3) + F(2) = 3 \)
+- and so on.
+
+## Example Java Code
+
+Here’s a Java program to display the first few numbers in the Fibonacci series.
+
+```java
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        int n1 = 0, n2 = 1, n3;
+        System.out.print(n1 + " " + n2); // Print the first two numbers
+
+        for (int i = 2; i < 10; i++) { // Adjust 10 for more terms
+            n3 = n1 + n2; // Calculate the next number in sequence
+            System.out.print(" " + n3); // Print next number
+            n1 = n2; // Shift n1 to n2
+            n2 = n3; // Shift n2 to n3
+        }
+    }
+}
+```
+### How It Works
+- Initialize the first two terms as n1 = 0 and n2 = 1.
+- Loop to calculate the next terms by adding the last two terms:
+- n3 = n1 + n2
+- Print each term, updating n1 and n2 as you move forward in the sequence.
+   This program will output the first 10 terms of the Fibonacci series. You can change the loop limit to display more terms as needed.
+
+
 ## Task 2:
 - Display the First 8 Numbers of the Fibonacci Series
 - Functionality: Display the first 8 numbers in the Fibonacci series.
-
 **Code:**
 ```java
 public class FibonacciSeries {
