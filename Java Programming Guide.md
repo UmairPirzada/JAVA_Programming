@@ -11,15 +11,11 @@ This repository provides examples and explanations of core Java programming conc
 3. [Variables and Primitive Data Types](#variables-and-primitive-data-types)
 4. [Reference Types and Object Manipulation](#reference-types-and-object-manipulation)
 5. [Arrays - Single and Multi-dimensional](#arrays---single-and-multi-dimensional)
-
-This document provides essential information on Java programming, including important terminologies, basic syntax, file-making rules, naming conventions, and data types.
-
-## Table of Contents
-1. [Important Java Terminologies](#important-java-terminologies)
-2. [Basic Java Syntax](#basic-java-syntax)
-3. [File Making Extension Class Rules](#file-making-extension-class-rules)
-4. [Naming Conventions](#naming-conventions)
-5. [Primitive and Non-Primitive Data Types](#primitive-and-non-primitive-data-types)
+6. [Important Java Terminologies](#important-java-terminologies)
+7. [Basic Java Syntax](#basic-java-syntax)
+8. [File Making Extension Class Rules](#file-making-extension-class-rules)
+9. [Naming Conventions](#naming-conventions)
+10. [Primitive and Non-Primitive Data Types](#primitive-and-non-primitive-data-types)
 
 ---
 
@@ -114,7 +110,7 @@ public class HelloWorld {
 // Hello, World!
 ```
 
-# 1. Import Statements
+# 6. Import Statements
 
 ```java
 import java.awt.*;       // Imports all classes in the java.awt package
@@ -130,7 +126,7 @@ import java.util.Arrays;  // Imports the Arrays class for array operations
 
 - java.util.Arrays: Offers utility methods for array manipulation, such as sorting and converting arrays to strings.
 
-# 2. String Literals and Escape Sequences
+# 7. String Literals and Escape Sequences
 
 ```jave
 public class Main {
@@ -158,7 +154,7 @@ public class Main {
 - \n represents a new line.
 - \t represents a tab space.
 
-# 3. Variables and Primitive Data Types
+# 8. Variables and Primitive Data Types
 ```jave
 public class Main {
     public static void main(String[] args) {
@@ -187,7 +183,7 @@ public class Main {
 - char for single characters.
 - boolean for true/false values. Underscores (_) improve readability in large numbers.
 
-# 4. Reference Types and Object Manipulation
+# 9. Reference Types and Object Manipulation
 ```java
   import java.awt.Point;
 import java.util.Date;
@@ -222,7 +218,7 @@ public class Main {
 - Reference types store references to objects. Modifying the object through point1 reflects in point2 as they point to the same object.
 
 
-# 5. Arrays - Single and Multi-dimensional
+# 10. Arrays - Single and Multi-dimensional
 ```java
 import java.util.Arrays;
 
