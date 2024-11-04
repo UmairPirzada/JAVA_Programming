@@ -118,7 +118,7 @@ import java.util.Date;    // Imports the Date class from the java.util package
 import java.util.Arrays;  // Imports the Arrays class for array operations
 ```
 ### Explanation
-** In Java, import statements allow you to access predefined classes from various packages. Here we are importing:**
+**In Java, import statements allow you to access predefined classes from various packages. Here we are importing:**
 
 - java.awt.*: Includes classes for GUI components and layouts.
 
