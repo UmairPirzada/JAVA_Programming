@@ -1,4 +1,16 @@
-# Java Programming Basics
+# Java Programming Concepts with Code Examples
+
+This repository provides examples and explanations of core Java programming concepts, including import statements, string handling, variables, reference types, and arrays. Each concept is demonstrated with code snippets and explanations, suitable for both beginners and those looking to brush up on Java fundamentals.
+
+---
+
+## Table of Contents
+
+1. [Import Statements](#import-statements)
+2. [String Literals and Escape Sequences](#string-literals-and-escape-sequences)
+3. [Variables and Primitive Data Types](#variables-and-primitive-data-types)
+4. [Reference Types and Object Manipulation](#reference-types-and-object-manipulation)
+5. [Arrays - Single and Multi-dimensional](#arrays---single-and-multi-dimensional)
 
 This document provides essential information on Java programming, including important terminologies, basic syntax, file-making rules, naming conventions, and data types.
 
@@ -101,21 +113,6 @@ public class HelloWorld {
 
 // Hello, World!
 ```
-# Java Programming Concepts with Code Examples
-
-This repository provides examples and explanations of core Java programming concepts, including import statements, string handling, variables, reference types, and arrays. Each concept is demonstrated with code snippets and explanations, suitable for both beginners and those looking to brush up on Java fundamentals.
-
----
-
-## Table of Contents
-
-1. [Import Statements](#import-statements)
-2. [String Literals and Escape Sequences](#string-literals-and-escape-sequences)
-3. [Variables and Primitive Data Types](#variables-and-primitive-data-types)
-4. [Reference Types and Object Manipulation](#reference-types-and-object-manipulation)
-5. [Arrays - Single and Multi-dimensional](#arrays---single-and-multi-dimensional)
-
----
 
 # 1. Import Statements
 
