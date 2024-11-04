@@ -154,6 +154,67 @@ public class Main {
 - \n represents a new line.
 - \t represents a tab space.
 
+## Primitive and Non-Primitive Data Types
+
+### Primitive Data Types
+
+1. **int**: Represents a 32-bit signed integer.
+   - **Example**:
+     ```java
+     int age = 30;
+     ```
+
+2. **double**: Represents a double-precision 64-bit floating point.
+   - **Example**:
+     ```java
+     double price = 19.99;
+     ```
+
+3. **char**: Represents a single 16-bit Unicode character.
+   - **Example**:
+     ```java
+     char initial = 'A';
+     ```
+
+4. **boolean**: Represents a value of true or false.
+   - **Example**:
+     ```java
+     boolean isJavaFun = true;
+     ```
+
+### Non-Primitive Data Types
+
+1. **String**: A sequence of characters.
+   - **Example**:
+     ```java
+     String greeting = "Hello, Java!";
+     ```
+
+2. **Array**: A collection of similar types.
+   - **Example**:
+     ```java
+     int[] numbers = {1, 2, 3, 4, 5};
+     ```
+
+3. **Class**: A user-defined type.
+   - **Example**:
+     ```java
+     class Car {
+         String model;
+         Car(String model) {
+             this.model = model;
+         }
+     }
+     ```
+
+4. **Interface**: A reference type that can contain only method signatures.
+   - **Example**:
+     ```java
+     interface Animal {
+         void sound();
+     }
+     ```
+
 # 8. Variables and Primitive Data Types
 ```jave
 public class Main {
@@ -185,7 +246,7 @@ public class Main {
 
 # 9. Reference Types and Object Manipulation
 ```java
-  import java.awt.Point;
+import java.awt.Point;
 import java.util.Date;
 
 public class Main {
@@ -251,67 +312,6 @@ public class Main {
 - Single-dimensional arrays store a list of elements of the same type.
 - Multi-dimensional arrays (like 2D arrays) represent grids or tables.
 - Arrays.toString() and Arrays.deepToString() help in printing single and multi-dimensional arrays, respectively.
-
-## Primitive and Non-Primitive Data Types
-
-### Primitive Data Types
-
-1. **int**: Represents a 32-bit signed integer.
-   - **Example**:
-     ```java
-     int age = 30;
-     ```
-
-2. **double**: Represents a double-precision 64-bit floating point.
-   - **Example**:
-     ```java
-     double price = 19.99;
-     ```
-
-3. **char**: Represents a single 16-bit Unicode character.
-   - **Example**:
-     ```java
-     char initial = 'A';
-     ```
-
-4. **boolean**: Represents a value of true or false.
-   - **Example**:
-     ```java
-     boolean isJavaFun = true;
-     ```
-
-### Non-Primitive Data Types
-
-1. **String**: A sequence of characters.
-   - **Example**:
-     ```java
-     String greeting = "Hello, Java!";
-     ```
-
-2. **Array**: A collection of similar types.
-   - **Example**:
-     ```java
-     int[] numbers = {1, 2, 3, 4, 5};
-     ```
-
-3. **Class**: A user-defined type.
-   - **Example**:
-     ```java
-     class Car {
-         String model;
-         Car(String model) {
-             this.model = model;
-         }
-     }
-     ```
-
-4. **Interface**: A reference type that can contain only method signatures.
-   - **Example**:
-     ```java
-     interface Animal {
-         void sound();
-     }
-     ```
 
 ## Java Code: JavaBasics.java
 
