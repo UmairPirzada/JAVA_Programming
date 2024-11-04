@@ -125,6 +125,7 @@ public class FibonacciSeries {
 This program converts temperatures between Celsius and Fahrenheit using the following formulas.
 
 ## Conversion Formulas
+![image](https://github.com/user-attachments/assets/5ad263eb-30aa-4828-b1ae-696004e7aa12)
 
 ### Celsius to Fahrenheit
 To convert a temperature from Celsius to Fahrenheit:
