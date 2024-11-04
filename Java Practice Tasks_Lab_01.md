@@ -13,9 +13,7 @@ This repository contains solutions for basic Java practice tasks aimed at reinfo
     - [Task 3: Temperature Conversion (Celsius to Fahrenheit and vice versa)](#task-3-temperature-conversion-celsius-to-fahrenheit-and-vice-versa)
     - [Task 4: Calculate Factorial](#task-4-calculate-factorial)
     - [Task 5: Check if a String is a Palindrome](#task-5-check-if-a-string-is-a-palindrome)
-3. [Usage](#usage)
-4. [Compilation and Execution](#compilation-and-execution)
-5. [License](#license)
+
 
 ---
 
