@@ -35,6 +35,30 @@
 - **James Gosling’s Impact**: Through his work, Gosling fundamentally transformed software development, demonstrating how a language optimized for simplicity and portability could shape the programming landscape for decades.
 
 Java remains one of the world’s most widely-used programming languages, with a vast ecosystem and community that ensure its relevance and growth.
+# Comparison of C, C++, and Java Programming Languages
+
+| Feature                       | C                           | C++                               | Java                                |
+|-------------------------------|-----------------------------|-----------------------------------|-------------------------------------|
+| **Platform Dependence**       | Platform-dependent (compiled to machine code) | Platform-dependent (compiled to machine code) | Platform-independent (runs on JVM) |
+| **Memory Management**         | Manual (pointers, `malloc`, `free`) | Manual (pointers, `new`, `delete`) | Automatic (Garbage Collection)     |
+| **Programming Paradigm**      | Procedural                  | Multi-paradigm (Procedural, Object-oriented) | Object-oriented                     |
+| **Complexity**                | Simple, low-level           | Complex, especially with pointers and inheritance | Simplified, high-level              |
+| **Performance**               | High                        | High, but can be slower than C due to OO features | Slower than C and C++, but generally fast |
+| **Syntax**                    | Minimal, straightforward    | Complex (supports pointers, multiple inheritance) | Simplified, no pointers, no multiple inheritance |
+| **Standard Library**          | Limited (mostly low-level functions) | Extensive, but not as large as Java | Very extensive (collections, networking, GUIs, etc.) |
+| **Memory Safety**             | Prone to memory leaks and errors | Prone to memory leaks and errors | Safer (no pointers, automatic memory management) |
+| **Concurrency Support**       | Limited, via libraries      | Limited, via libraries            | Built-in multithreading             |
+| **Security**                  | Minimal built-in security   | Minimal built-in security         | Strong built-in security features   |
+| **Primary Use Cases**         | Systems programming, embedded systems, OS development | Systems and application programming, game development, complex software | Web applications, mobile apps (Android), enterprise software |
+| **Compilation and Execution** | Directly compiled to machine code | Directly compiled to machine code | Compiled to bytecode, executed on JVM |
+| **Community and Ecosystem**   | Established but smaller     | Established, widely used          | Large ecosystem, extensive community support |
+| **Ease of Learning**          | Moderate                    | Harder to learn due to complexity | Easier due to simplified syntax and memory management |
+| **Popular IDEs and Tools**    | GCC, Clang, Visual Studio   | GCC, Clang, Visual Studio         | IntelliJ IDEA, Eclipse, NetBeans    |
+
+## Summary
+- **C**: Best for low-level programming and systems programming, where close-to-hardware control is needed.
+- **C++**: Offers a balance of performance and object-oriented features, ideal for applications that require high performance with complex architectures.
+- **Java**: Excellent for cross-platform applications, especially in enterprise and web development, with a focus on ease of use, memory management, and security.
 
 ### What is Java?
 
