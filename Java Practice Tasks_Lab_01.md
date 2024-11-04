@@ -48,6 +48,8 @@ public class EvenNumbers {
 
 # Fibonacci Formula
 - The **Fibonacci Series** is a sequence where each number is the sum of the two preceding ones, starting from 0 and 1. This sequence is widely used in mathematics, computer science, and even appears in natural patterns.
+  
+![image](https://github.com/user-attachments/assets/b22e0d45-dc29-4d44-aa78-8bcdb7ff3654)
 
 ## Definition
 
