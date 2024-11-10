@@ -325,14 +325,7 @@ Your code goes Here...
 ### Hint:
 ## Calculating Weight Using Constants
 
-To calculate the weight of an object, we can use the following formula:
+![image](https://github.com/user-attachments/assets/d1ab88b2-b67d-4bed-b4e6-97daa9361a12)
 
-\[
-\text{Weight} = \text{Mass} \times \text{Gravity}
-\]
-
-where:
-- **Mass** is the mass of the object (in kilograms).
-- **Gravity** is the gravitational acceleration constant, usually \(9.8 \, m/s^2\) on Earth.
 
 
