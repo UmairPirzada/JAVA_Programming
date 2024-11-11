@@ -30,11 +30,27 @@ In the first example, multiplication (*) has higher precedence than addition (+)
 # Type Casting
 Type casting is converting a variable from one data type to another. There are two types of casting in Java:
 
-### 1. Implicit Casting (automatic conversion)
+### 1. Implicit Casting (automatic conversion) / Widening Casting
 
-### 2. Explicit Casting (manual conversion)
+### 2. Explicit Casting (manual conversion) / Narrowing Casting
 
-# 1. Implicit Casting
+
+
+Widening casting is done automatically when passing a smaller size type to a larger size type:
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+```
+
+# 1. Implicit Casting / Widening Casting
 In implicit casting, Java automatically converts smaller data types to larger data types. The order of data types in Java from least to most precise is:
 
 byte > short > int > long > float > double
@@ -50,8 +66,21 @@ double yDouble = xDouble + 2;  // `int` is automatically cast to `double`
 System.out.println(yDouble);
 // Output: 3.1
 ```
+Widening casting is done automatically when passing a smaller size type to a larger size type:
 
-# 2. Explicit Casting
+```java
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+```
+
+# 2. Explicit Casting / Widening Casting
 Explicit casting is necessary when converting from a larger to a smaller data type or between incompatible types.
 
 ```java 
@@ -70,6 +99,21 @@ String xFloatStr = "1.1";
 float yParsedFloat = Float.parseFloat(xFloatStr) + 2;
 System.out.println(yParsedFloat);
 // Output: 3.1
+```
+
+Narrowing casting must be done manually by placing the type in parentheses () in front of the value:
+
+
+```java 
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
 ```
 
 # The Math Class
