@@ -53,6 +53,8 @@ public class Main {
 # 1. Implicit Casting / Widening Casting
 In implicit casting, Java automatically converts smaller data types to larger data types. The order of data types in Java from least to most precise is:
 
+Widening casting is done automatically when passing a smaller size type to a larger size type:
+
 byte > short > int > long > float > double
 
 ```java
@@ -66,7 +68,6 @@ double yDouble = xDouble + 2;  // `int` is automatically cast to `double`
 System.out.println(yDouble);
 // Output: 3.1
 ```
-Widening casting is done automatically when passing a smaller size type to a larger size type:
 
 ```java
 public class Main {
@@ -82,6 +83,8 @@ public class Main {
 
 # 2. Explicit Casting / Widening Casting
 Explicit casting is necessary when converting from a larger to a smaller data type or between incompatible types.
+
+Narrowing casting must be done manually by placing the type in parentheses () in front of the value:
 
 ```java 
 double xDouble = 1.1;
@@ -101,7 +104,7 @@ System.out.println(yParsedFloat);
 // Output: 3.1
 ```
 
-Narrowing casting must be done manually by placing the type in parentheses () in front of the value:
+
 
 
 ```java 
