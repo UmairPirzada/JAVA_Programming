@@ -182,3 +182,58 @@ boolean hasCriminalRecord = true;
 boolean isEligible = !(hasCriminalRecord);
 System.out.println(isEligible);  // Output: false
 ```
+
+# Practice Tasks
+### Task 1: Number Comparison
+**Problem:**
+Write a program that asks the user to input two numbers and then compares them using all the comparison operators. Print the result for each comparison.
+
+### Steps:
+
+Ask the user to input two numbers.
+
+Compare the two numbers using the following operators:
+
+- == (checks if they are equal)
+
+- != (checks if they are not equal)
+
+- < (checks if the first number is less than the second)
+
+- > (checks if the first number is greater than the second)
+
+- <= (checks if the first number is less than or equal to the second)
+
+- >= (checks if the first number is greater than or equal to the second)
+  
+Print the results of each comparison.
+
+```java
+  Your Code Goes Here...
+```
+
+### Task 2: Logical Operators for Eligibility Check
+**Problem:**
+Write a program that checks if a person is eligible to apply for a job based on the following criteria:
+
+- The person must be at least 18 years old.
+
+- The person must have a degree (either "Bachelor" or "Master").
+
+- The person must not have a criminal record.
+
+### Ask the user to input:
+
+- Age
+Degree (either "Bachelor" or "Master")
+
+- Whether they have a criminal record (true or false)
+
+- Then, use logical operators to check the following:
+
+The person must meet the age and degree requirements AND must not have a criminal record.
+If all conditions are met, print "Eligible to apply". Otherwise, print "Not eligible to apply".
+
+```java
+  Your Code Goes Here...
+```
