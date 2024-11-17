@@ -43,7 +43,7 @@ The **AND** operator (`&&`) returns `true` only when both operands are `true`. I
 ```text
 | Operand 1 | Operand 2 | AND (&&) |
 |-----------|-----------|----------|
-| **true**  | **true**  | **true** |
+| *true*  | **true**  | **true** |
 | **true**  | **false** | **false**|
 | **false** | **true**  | **false**|
 | **false** | **false** | **false**|
