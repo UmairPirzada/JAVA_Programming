@@ -278,3 +278,49 @@ public class MortgageCalculator {
     }
 }
 ```
+
+
+# Tasks for Students
+### Task 1: Calculate Monthly Payment with Different Inputs
+
+**Problem:** Modify the program to calculate the monthly payment for different inputs. Try changing the principal amount, interest rate, and loan term, and observe how the monthly payment changes.
+
+### Input Example:
+
+- Principal: 250,000
+  
+- Interest Rate: 5%
+  
+- Loan Term: 20 years
+  
+**Expected Output:** Calculate and print the result for the monthly mortgage payment based on the above inputs.
+
+```java
+
+Your Code Goes Here...
+```
+
+
+### Task 2: Calculate Total Interest Paid Over the Life of the Loan
+**Problem:** Modify the program to also calculate the total interest paid over the life of the loan.
+
+Formula for Total Interest Paid:
+
+![image](https://github.com/user-attachments/assets/4f61f2c6-37b2-4af6-a175-6f7690eb4251)
+
+
+Total Interest= Total Payments−Principal
+Input Example:
+
+- Principal: 300,000
+  
+- Annual Interest Rate: 3.5%
+
+- Loan Term: 30 years
+
+**Output Example:** Display the total interest paid after the loan is paid off.
+
+```java
+
+Your Code Goes Here...
+```
