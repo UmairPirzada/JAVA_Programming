@@ -147,6 +147,17 @@ Your Code Goes Here...
 
 ### Task 2: BMI Calculator
 Create a program that asks the user for:
+BMI stands for Body Mass Index. It's a simple calculation that uses your height and weight to estimate your body fat percentage. While it's not a perfect measure, it can give you a general idea of whether you're at a healthy weight.   
+
+Here's how to interpret your BMI:
+
+- Underweight: Less than 18.5
+   
+- Normal weight: 18.5 - 24.9   
+
+- Overweight: 25 - 29.9   
+  
+- Obese: 30 or higher   
 
 - Weight (in kg)
   
