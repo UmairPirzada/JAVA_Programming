@@ -211,19 +211,6 @@ Your Code Goes Here...
 This project is a **Mortgage Calculator** that calculates the monthly mortgage payment based on the loan amount, interest rate, and loan term. The program takes input from the user and applies the mortgage calculation formula to compute the monthly payment.
 
 The formula used to calculate the mortgage payment is:
-
-\[
-M = \frac{P \cdot r \cdot (1 + r)^n}{(1 + r)^n - 1}
-\]
-
-Where:
-- \(M\) = Monthly Payment
-- \(P\) = Principal loan amount
-- \(r\) = Monthly interest rate (Annual rate divided by 12)
-- \(n\) = Total number of payments (Loan term in years multiplied by 12)
-
----
-
 ## Formula for Mortgage Calculation
 
 The formula used to calculate the monthly payment for a mortgage is:
