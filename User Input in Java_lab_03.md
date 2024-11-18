@@ -165,7 +165,8 @@ Here's how to interpret your BMI:
   
 **Calculate and print their BMI using the formula:**
 
-![image](https://github.com/user-attachments/assets/c1a716b4-96d8-40cf-b102-0fc4a87c2e4d)
+![image](https://github.com/user-attachments/assets/368affe8-e81e-4f7c-8678-6324b264a2bd)
+
 
 
 ### BMI = weight / (height * height)
@@ -227,8 +228,9 @@ Where:
 
 The formula used to calculate the monthly payment for a mortgage is:
 
-![Uploading image.png…]()
 
+
+![image](https://github.com/user-attachments/assets/c1a716b4-96d8-40cf-b102-0fc4a87c2e4d)
 
 Where:
 - \(M\) = Monthly Payment
