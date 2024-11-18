@@ -154,6 +154,9 @@ Create a program that asks the user for:
   
 **Calculate and print their BMI using the formula:**
 
+![Uploading image.png…]()
+
+
 ### BMI = weight / (height * height)
 
 ```java
