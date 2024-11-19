@@ -1154,3 +1154,466 @@ A do-while loop is useful when:
 
 # Conclusion
 The do-while loop is a useful construct when you need the loop body to execute at least once, and the condition is evaluated after the loop runs. It is especially effective for situations where an action needs to be performed first, and then a decision is made based on the outcome. When compared to for and while loops, the do-while loop is unique in that it guarantees execution of the loop body before the condition is checked.
+
+---
+
+# Jump Statements in Java
+
+Jump statements are used to transfer the control of the program to specific statements. They allow altering the natural flow of loops and switch cases to handle certain conditions efficiently. In other words, jump statements transfer the execution control to the other part of the program. There are two types of jump statements in Java, i.e., break and continue.
+
+**There are two types of jump statements in Java:**
+1. **`break` Statement**
+   
+3. **`continue` Statement**
+
+---
+
+# Java `break` Statement
+
+As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only the inner loop in the case of the nested loop.
+
+The break statement cannot be used independently in the Java program, i.e., it can only be written inside the loop or switch statement.
+
+The `break` statement is used to terminate the current loop or switch statement prematurely. It transfers control to the statement immediately following the loop or switch.
+
+### Syntax:
+```java
+break;
+```
+
+### Example 1: Basic break in a for loop
+
+Consider the following example in which we have used the break statement with the for loop.
+
+**BreakExample.java**
+
+```java
+public class BreakExample {  
+    public static void main(String[] args) {  
+        for (int i = 0; i <= 10; i++) {  
+            System.out.println(i);  
+            if (i == 6) {  
+                break; // Exit the loop when i equals 6
+            }  
+        }  
+    }  
+}
+```
+
+```text
+Output:
+
+0
+1
+2
+3
+4
+5
+6
+```
+
+### Example 2: break with Labeled Loops
+
+```java 
+public class Calculation {  
+    public static void main(String[] args) {  
+        a:  
+        for (int i = 0; i <= 10; i++) {  
+            b:  
+            for (int j = 0; j <= 15; j++) {  
+                c:  
+                for (int k = 0; k <= 20; k++) {  
+                    System.out.println(k);  
+                    if (k == 5) {  
+                        break a; // Exit the outermost loop
+                    }  
+                }  
+            }  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+0
+1
+2
+3
+4
+5
+```
+
+### Example 3: Real-World Use Case - Searching for an Item
+```java
+
+public class RealWorldBreak {  
+    public static void main(String[] args) {  
+        String[] items = {"Apple", "Banana", "Cherry", "Date"};  
+        String search = "Cherry";  
+        
+        for (String item : items) {  
+            System.out.println("Checking: " + item);  
+            if (item.equals(search)) {  
+                System.out.println("Found " + search + "! Exiting the loop.");  
+                break; // Exit the loop when the item is found
+            }  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Checking: Apple
+Checking: Banana
+Checking: Cherry
+Found Cherry! Exiting the loop.
+```
+
+### Example 4: Break Nested Loops in a Game
+```java
+
+public class GameExample {  
+    public static void main(String[] args) {  
+        outer:  
+        for (int level = 1; level <= 3; level++) {  
+            System.out.println("Level " + level);  
+            for (int life = 1; life <= 3; life++) {  
+                System.out.println("Life " + life);  
+                if (life == 2 && level == 2) {  
+                    System.out.println("Exiting the game at Level 2, Life 2.");  
+                    break outer;  
+                }  
+            }  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Level 1
+Life 1
+Life 2
+Life 3
+Level 2
+Life 1
+Life 2
+Exiting the game at Level 2, Life 2.
+```
+
+# Real-World Benefits
+### 1. Efficient Loop Termination:
+
+- Saves computation by stopping unnecessary iterations.
+  
+- E.g., stopping a file search when the desired file is found.
+### 2. Nested Loop Control:
+
+- Exiting specific loops in complex nested scenarios.
+  
+- E.g., game development, simulation control, etc.
+### Error Handling and Early Exit:
+
+- Used to exit loops when encountering an error or invalid state.
+  
+- E.g., checking system conditions or input validity.
+
+# Java `continue` Statement
+
+The `continue` statement in Java is used to skip the current iteration of a loop and move to the next iteration. Unlike the `break` statement, it does not terminate the loop but skips the rest of the code for the current iteration.
+
+Unlike break statement, the continue statement doesn't break the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
+
+
+---
+
+## Syntax:
+```java
+continue;
+```
+
+
+# Why Use continue?
+- To skip unnecessary or unwanted iterations in a loop.
+  
+- To handle specific cases without terminating the loop.
+  
+- Useful in scenarios where certain conditions require bypassing parts of the loop logic.
+  
+# Benefits of continue:
+- **Efficiency:** Reduces redundant code by skipping specific iterations.
+  
+- **Flexibility:** Allows more granular control of loop execution.
+
+- **Error Handling:** Helps handle invalid or unwanted conditions in loops without terminating them.
+
+  Consider the following example to understand the functioning of the continue statement in Java
+
+ ### Example 1: Skipping Specific Values
+```java
+ public class ContinueExample {  
+    public static void main(String[] args) {  
+        for (int i = 0; i <= 2; i++) {  
+            for (int j = i; j <= 5; j++) {  
+                if (j == 4) {  
+                    continue; // Skip the current iteration when j equals 4
+                }  
+                System.out.println(j);  
+            }  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Copy code
+0
+1
+2
+3
+5
+1
+2
+3
+5
+2
+3
+5
+```
+
+# Dry Run:
+### - Outer Loop (i loop):
+- The outer loop iterates over i from 0 to 2 (i <= 2).
+  
+### - Inner Loop (j loop):
+- For each value of i, the inner loop iterates over j from i to 5 (j <= 5).
+### - Key Logic:
+- If j == 4, the continue statement skips the current iteration of the inner loop, so System.out.println(j) is not executed for j == 4.
+  
+# Step-by-Step Execution:
+### 1. Iteration 1 (i = 0):
+
+- j = 0: System.out.println(0) → Output: 0.
+
+- j = 1: System.out.println(1) → Output: 1.
+
+- j = 2: System.out.println(2) → Output: 2.
+
+- j = 3: System.out.println(3) → Output: 3.
+
+- j = 4: continue → Skips System.out.println(4).
+
+- j = 5: System.out.println(5) → Output: 5.
+
+### 2. Iteration 2 (i = 1):
+
+- j = 1: System.out.println(1) → Output: 1.
+
+- j = 2: System.out.println(2) → Output: 2.
+
+- j = 3: System.out.println(3) → Output: 3.
+
+- j = 4: continue → Skips System.out.println(4).
+
+- j = 5: System.out.println(5) → Output: 5.
+
+### 3. Iteration 3 (i = 2):
+
+- j = 2: System.out.println(2) → Output: 2.
+
+- j = 3: System.out.println(3) → Output: 3.
+
+- j = 4: continue → Skips System.out.println(4).
+
+- j = 5: System.out.println(5) → Output: 5.
+
+# Explanation:
+Each time j == 4, the continue statement skips the System.out.println(j) and moves to the next iteration of the inner loop.
+
+For all other values of j, the value is printed as expected.
+
+### Example 2: Skipping Even Numbers
+```java
+public class SkipEvenNumbers {  
+    public static void main(String[] args) {  
+        for (int i = 1; i <= 10; i++) {  
+            if (i % 2 == 0) {  
+                continue; // Skip even numbers
+            }  
+            System.out.println("Odd number: " + i);  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Odd number: 1
+Odd number: 3
+Odd number: 5
+Odd number: 7
+Odd number: 9
+```
+
+### Example 3: Real-World Use Case - Skipping Invalid Input
+```java
+public class SkipInvalidInput {  
+    public static void main(String[] args) {  
+        String[] inputs = {"12", "abc", "45", "xyz", "78"};  
+        
+        for (String input : inputs) {  
+            try {  
+                int num = Integer.parseInt(input);  
+                System.out.println("Valid number: " + num);  
+            } catch (NumberFormatException e) {  
+                continue; // Skip invalid inputs
+            }  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Valid number: 12
+Valid number: 45
+Valid number: 78
+```
+### Example 4: Skipping Low Scores in a Game
+``` java
+
+public class SkipLowScores {  
+    public static void main(String[] args) {  
+        int[] scores = {45, 32, 85, 91, 28, 67};  
+
+        for (int score : scores) {  
+            if (score < 50) {  
+                System.out.println("Skipping low score: " + score);  
+                continue; // Skip scores below 50
+            }  
+            System.out.println("High score: " + score);  
+        }  
+    }  
+}
+```
+```text
+Output:
+
+Skipping low score: 45
+Skipping low score: 32
+High score: 85
+High score: 91
+Skipping low score: 28
+High score: 67
+```
+
+# Real-World Benefits of continue:
+### 1. Data Filtering:
+
+-    Useful for skipping invalid or irrelevant data in a loop.
+  
+-    E.g., processing user input, filtering valid numbers or strings.
+### 2. Optimized Processing:
+
+- Helps in focusing only on required conditions and avoids unnecessary computations.
+  
+- E.g., skipping unnecessary steps in algorithms.
+### 3. Improved Logic Clarity:
+
+- Keeps the loop clean and focused by explicitly skipping unwanted conditions.
+###4. Error Handling:
+
+Efficiently skips iterations with errors or exceptions while continuing the loop execution.
+---
+
+
+# Practice Tasks for Loops and Jump Statements
+
+# 1. **For Loop Task**
+**Task Name:** Calculate Total Cost of Items in a Cart  
+**Description:**  
+Write a program that calculates the total cost of items in a shopping cart. Use a `for` loop to iterate through the prices of 5 items and calculate their sum.
+
+**Real-Life Scenario:**  
+This simulates the process of calculating the total cost of items in an online shopping cart.
+
+**Instructions:**  
+- Use a `for` loop to iterate over the prices of 5 items stored in an array.
+- Calculate and display the total cost.
+
+``` java
+Your Code Goes Here...
+```
+---
+
+# 2. **While Loop Task**
+**Task Name:** Countdown Timer  
+**Description:**  
+Create a program that simulates a countdown timer starting from 10. Use a `while` loop to display the countdown.
+
+**Real-Life Scenario:**  
+This simulates the timer used in online exams or games.
+
+**Instructions:**  
+- Use a `while` loop to display numbers from 10 to 0.
+- Print "Time's up!" when the countdown ends.
+  
+``` java
+Your Code Goes Here...
+```
+---
+
+# 3. **Do-While Loop Task**
+**Task Name:** Password Entry Simulation  
+**Description:**  
+Simulate a system where a user is repeatedly prompted to enter a password until they get it correct.
+
+**Real-Life Scenario:**  
+This simulates password validation in login systems.
+
+**Instructions:**  
+- Use a `do-while` loop to repeatedly prompt the user for a password.
+- Exit the loop once the correct password is entered.
+
+``` java
+Your Code Goes Here...
+```
+---
+
+# 4. **Break Statement Task**
+**Task Name:** Exit on High Temperature  
+**Description:**  
+Write a program to monitor temperatures from a sensor. Use a `break` statement to stop monitoring if the temperature exceeds 40°C.
+
+**Real-Life Scenario:**  
+This simulates a system that shuts down operations when a temperature threshold is reached.
+
+**Instructions:**  
+- Use a loop to simulate temperature readings.
+- Break the loop if the temperature exceeds 40°C.
+
+``` java
+Your Code Goes Here...
+```
+---
+
+## 5. **Continue Statement Task**
+**Task Name:** Skip Out-of-Stock Items  
+**Description:**  
+Create a program to process items in an inventory. Use a `continue` statement to skip items that are out of stock.
+
+**Real-Life Scenario:**  
+This simulates inventory management where out-of-stock items are skipped during processing.
+
+**Instructions:**  
+- Use a loop to iterate through an inventory list.
+- Skip items marked as "Out of Stock" and process only available items.
+
+``` java
+Your Code Goes Here...
+```
+
+---
