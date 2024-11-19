@@ -447,3 +447,61 @@ public class GradeEvaluator {
 - Switch supports multiple data types like int, String, and enum for different use cases.
   
 - Switch statements are a powerful feature in Java that simplifies decision-making and enhances the efficiency of code.
+
+# Java Decision-Making Statements Practice Tasks
+
+Below are practice tasks for each type of decision-making statement: **Simple if**, **if-else**, **if-else-if**, and **switch**. These tasks will help you understand how to implement these control flow statements in real-world scenarios.
+
+---
+
+### 1. Simple If Practice Task
+**Task 1**:  
+Write a program that checks if a number is positive. If the number is positive, print `"The number is positive"`.
+
+**Hint**:  
+Use a single `if` statement to evaluate the condition.
+
+**Example Code**:
+```java
+Your Code Goes Here...
+```
+
+### 2. If-Else Practice Task
+**Task2:**
+Write a program to check if a number is even or odd. If the number is even, print "Even number". Otherwise, print "Odd number".
+
+**Hint:**
+Use the modulus operator % to check for even or odd.
+
+
+```java
+Your Code Goes Here...
+```
+
+### 3. If-Else-If Practice Task
+**Task 3:**
+Write a program to determine the grade of a student based on their score:
+
+If the score is 90 or above, print "A".
+If the score is 80 to 89, print "B".
+If the score is 70 to 79, print "C".
+If the score is below 70, print "Fail".
+**Hint:**
+Use multiple if-else-if conditions.
+
+```java
+Your Code Goes Here...
+```
+
+### 4. Switch Statement Practice Task
+**Task 4:**
+Write a program that prints the type of vehicle based on its number:
+
+1: "Car", 2: "Bike", 3: "Truck", 4: "Bus".
+If the number is not between 1 and 4, print "Invalid vehicle type".
+**Hint:**
+Use a switch statement to map numbers to vehicle types.
+
+```java
+Your Code Goes Here...
+```
