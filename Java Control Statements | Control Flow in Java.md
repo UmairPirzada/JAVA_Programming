@@ -482,10 +482,14 @@ Your Code Goes Here...
 **Task 3:**
 Write a program to determine the grade of a student based on their score:
 
-If the score is 90 or above, print "A".
-If the score is 80 to 89, print "B".
-If the score is 70 to 79, print "C".
-If the score is below 70, print "Fail".
+- If the score is 90 or above, print "A".
+
+- If the score is 80 to 89, print "B".
+
+- If the score is 70 to 79, print "C".
+
+- If the score is below 70, print "Fail".
+
 **Hint:**
 Use multiple if-else-if conditions.
 
