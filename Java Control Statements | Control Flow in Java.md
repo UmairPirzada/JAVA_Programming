@@ -629,8 +629,10 @@ System.out.println("The sum of first 10 natural numbers is " + sum);
 
 // The sum of first 10 natural numbers is 55
 ```
+### The flow chart for the for-loop is given below.
 
-![image](https://github.com/user-attachments/assets/21553fc0-299d-46b6-9388-012cf78a1223)
+![image](https://github.com/user-attachments/assets/a677d650-5fcd-45fd-93ae-9307f4e86ef0)
+
 
 # Execution Steps:
 
@@ -812,7 +814,8 @@ The while loop is an entry-controlled loop, meaning the condition is checked bef
 
 Start ->  Evaluate condition ->  If true, execute loop body ->  After execution, go back to condition evaluation
 
-![image](https://github.com/user-attachments/assets/624fc688-170a-4913-bce9-f2d865280fe6)
+![image](https://github.com/user-attachments/assets/deff6197-fc1c-4dcc-a1c8-69fd09faa8e0)
+
 
 ### Example 1: Printing First 10 Even Numbers
 ```java
