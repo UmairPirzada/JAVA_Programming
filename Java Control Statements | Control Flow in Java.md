@@ -961,10 +961,196 @@ Use a while loop when the number of iterations isn't predetermined or when the l
 
 
 ### Explanation:
-- **Examples**: Added two more examples, one printing numbers from 1 to 5 and the other counting down from 10 to 1.
+
 - **Why Use While Loop**: Clarified when to use the `while` loop, especially when iterations are not known in advance.
 - **Comparison with For Loop**: Discussed the differences and use cases for `while` and `for` loops, helping the reader understand which loop is more appropriate for specific scenarios.
 - **Benefits**: Emphasized the flexibility and suitability of the `while` loop in certain use cases like indefinite iterations or complex conditions.
 
-This content is now ready to be included in your `README.md` file for a Java project involving `while` loops.
+---
+# Do-While Loop in Java
 
+The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
+
+
+The `do-while` loop is similar to the `while` loop, but it checks the condition at the end of the loop after executing the loop statements. This ensures that the loop body will execute at least once, even if the condition is `false` initially.
+
+It is also known as the **exit-controlled loop** since the condition is checked after the loop body executes.
+
+## Syntax of the Do-While Loop
+
+```java
+do {
+    // Statements
+} while (condition);
+```
+The do-while loop guarantees that the loop body will execute at least once, regardless of the condition. After the execution, the condition is evaluated, and if it's true, the loop continues; otherwise, the loop terminates.
+
+### The flow chart for the while loop is given in the following image.
+
+![image](https://github.com/user-attachments/assets/5c7f38c8-f15f-4f8b-8c43-01fa3ec1283d)
+
+### Example 1: Printing the First 10 Even Numbers
+```java
+public class Calculation {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int i = 0;
+        System.out.println("Printing the list of first 10 even numbers \n");
+        
+        do {
+            System.out.println(i);
+            i = i + 2;
+        } while (i <= 10);
+    }
+}
+```
+```text
+Output:
+
+Printing the list of first 10 even numbers
+0
+2
+4
+6
+8
+10
+```
+In this example, the do-while loop prints the first 10 even numbers starting from 0, incrementing by 2 after each iteration.
+
+### Example 2: Printing Numbers from 1 to 5
+```java
+public class Calculation {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++; // Incrementing i
+        } while (i <= 5);
+    }
+}
+```
+```text
+Output:
+
+1
+2
+3
+4
+5
+
+```
+In this example, the do-while loop prints numbers from 1 to 5. The condition i <= 5 is checked after each iteration.
+
+
+### Example 3: Counting Down from 10 to 1
+```java
+
+public class Calculation {
+    public static void main(String[] args) {
+        int i = 10;
+        do {
+            System.out.println(i);
+            i--; // Decrementing i
+        } while (i >= 1);
+    }
+}
+```
+```text
+Output:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+```
+
+In this example, the do-while loop counts down from 10 to 1, decrementing i after each iteration.
+
+# Real-Life Example of a Do-While Loop
+A common real-life scenario where a do-while loop can be applied is in a user input validation system. For example, let's imagine you're creating a program that asks users to enter a valid age. You want the program to keep asking for the input until the user enters a valid age (i.e., a number between 0 and 120).
+
+Here’s how a do-while loop can handle this situation:
+
+### Example: User Input for Age Validation
+```java
+import java.util.Scanner;
+
+public class AgeValidation {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int age;
+
+        do {
+            System.out.print("Please enter your age (0-120): ");
+            age = scanner.nextInt();
+
+            if (age < 0 || age > 120) {
+                System.out.println("Invalid age! Please enter a valid age.");
+            }
+        } while (age < 0 || age > 120);
+
+        System.out.println("Thank you! Your age is: " + age);
+    }
+}
+```
+
+### Explanation:
+**User Input:** The program asks the user to input their age.
+
+**Validation:** After each input, the program checks if the age is between 0 and 120. If the input is outside this range, the program prints an error message and asks the user to input the age again.
+
+**Loop Guarantee:** The do-while loop ensures that the program will ask for the age at least once, and will only stop asking if the user inputs a valid age.
+# When Is This Useful?
+**Real-time Validation:** This is commonly seen in forms or systems where user input must meet certain criteria (e.g., age range, password strength).
+
+**Interactive Systems:** Many applications, such as games or registration systems, require continuous user input until valid data is entered.
+---
+
+# Why Use a Do-While Loop?
+A do-while loop is useful when:
+
+- **At least one execution is required:** You need the loop body to execute at least once, regardless of the condition.
+  
+- **User input validation:** It's helpful for scenarios where you want to prompt the user for input at least once and continue prompting until a valid input is received.
+- 
+### For example:
+ - asking a user to input a number until a valid number is entered.
+
+
+# Comparison with For Loop and While Loop
+### Similarities:
+- **Looping Constructs:** All three (for, while, and do-while) are used to execute a block of code repeatedly.
+  
+- **Condition Checking:** The condition is checked at the start of each iteration for the while and for loops, but in the do-while loop, the condition is checked after the loop body.
+### Differences:
+**Condition Checking:**
+
+- **For Loop:** Initialization, condition, and increment/decrement are all part of the loop header.
+  
+- **While Loop:** Condition is checked before entering the loop. It is ideal when the number of iterations is unknown, and the condition might fail right at the beginning.
+
+- **Do-While Loop:** Condition is checked after the loop body. This guarantees the loop body executes at least once, making it suitable for situations where the loop body needs to execute initially regardless of the condition.
+  
+# Use Case:
+
+**For Loop:** Best when the number of iterations is known in advance, like iterating over a fixed range or a collection.
+
+**While Loop:** Best when the number of iterations is not known and the condition is checked at the beginning.
+
+**Do-While Loop:** Best when the loop body should execute at least once, and the condition is checked after the first execution.
+
+# Benefits of Using a Do-While Loop
+**At Least One Iteration:** The loop guarantees that the statements inside the loop will run at least once, which is useful in scenarios like user input or menu-driven programs.
+
+**Suitable for User Interaction:** When you want to prompt the user for input until they provide valid data, a do-while loop is ideal.
+
+**Exit-Controlled Loop:** Since the condition is checked after the loop body, it ensures that the loop executes once before deciding whether to continue.
+
+# Conclusion
+The do-while loop is a useful construct when you need the loop body to execute at least once, and the condition is evaluated after the loop runs. It is especially effective for situations where an action needs to be performed first, and then a decision is made based on the outcome. When compared to for and while loops, the do-while loop is unique in that it guarantees execution of the loop body before the condition is checked.
