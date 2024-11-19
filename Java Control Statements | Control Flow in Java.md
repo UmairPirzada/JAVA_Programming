@@ -1,88 +1,44 @@
-# Java Control Statements and Control Flow
+# Java Control Statements | Control Flow in Java
 
-This project demonstrates the implementation and usage of Java control statements and control flow concepts. It includes examples of decision-making, looping, and jump statements with detailed explanations and sample code.
+Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear. However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements. It is one of the fundamental features of Java, which provides a smooth flow of the program.
 
----
+Java provides three types of control flow statements:
+- **Decision Making statements**
+    - if statements
+    - switch statement
+- **Loop statements**
+    - do while loop
+    - while loop
+    - for loop
+    - for-each loop
+- **Jump statements**
+    - break statement
+    - continue statement
 
-## Table of Contents
+## Decision-Making statements:
 
-1. [Introduction](#introduction)
-2. [Control Statements Overview](#control-statements-overview)
-   - [Decision-Making Statements](#decision-making-statements)
-   - [Loop Statements](#loop-statements)
-   - [Jump Statements](#jump-statements)
-3. [Code Examples](#code-examples)
+As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.
 
----
+### 1) If Statement:
+In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below:
 
-## Introduction
+- Simple if statement
+- if-else statement
+- if-else-if ladder
+- Nested if-statement
 
-Java control flow enables programmers to direct the order in which statements execute in a program. This project includes examples of `if-else`, `switch`, loops, and jump statements. It serves as a guide for understanding how these fundamental programming constructs operate.
+Let's understand the `if` statements one by one.
 
----
+#### 1) Simple if statement:
+It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
 
-## Control Statements Overview
+**Real-life Example**:  
+Imagine you are in a shopping mall and you have a discount card. The system checks if the card is valid. If it is, the discount is applied; if not, you pay the full price. 
 
-### Decision-Making Statements
-
-1. **If Statement**
-   - Syntax:
-     ```java
-     if (condition) {
-         // Statements
-     }
-     ```
-   - Example: Check if `x + y > 20`.
-
-2. **Switch Statement**
-   - Syntax:
-     ```java
-     switch (expression) {
-         case value1:
-             // Statements
-             break;
-         default:
-             // Default statements
-     }
-     ```
-
-### Loop Statements
-
-1. **For Loop**
-   - Syntax:
-     ```java
-     for (initialization; condition; increment/decrement) {
-         // Loop statements
-     }
-     ```
-2. **While Loop**
-   - Syntax:
-     ```java
-     while (condition) {
-         // Loop statements
-     }
-     ```
-
-### Jump Statements
-
-1. **Break Statement**
-   - Exits the loop prematurely.
-2. **Continue Statement**
-   - Skips the current iteration and continues with the next.
-
----
-
-## Code Examples
-
-### Example: Simple If Statement
+**Syntax of if statement**:
 
 ```java
-public class DecisionMaking {
-    public static void main(String[] args) {
-        int x = 10, y = 12;
-        if (x + y > 20) {
-            System.out.println("x + y is greater than 20");
-        }
-    }
+if(condition) {    
+    statement 1; // executes when condition is true   
 }
 ```
