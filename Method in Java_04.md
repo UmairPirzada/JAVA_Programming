@@ -9,7 +9,8 @@ A method is a block of code or collection of statements or a set of code grouped
 ## Method Declaration
 The method declaration provides information about method attributes, such as visibility, return-type, name, and arguments. It has six components that are known as method header, as we have shown in the following figure.
 
-![image](https://github.com/user-attachments/assets/f3beed8b-6d83-4270-994c-eae444df3f3c)
+![Uploading image.png…]()
+
 
 ### Method Signature:
 Every method has a method signature. It is a part of the method declaration. It includes the method name and parameter list.
